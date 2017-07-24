@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 
-var User = require('./model')
+var User = require('../models/user')
 
 // get All Users
 router.get('/getAllUsers',function(req,res){
@@ -36,6 +36,8 @@ router.post('/addUser' , function(req,res){
         	res.json(user);
         });
  });
+
+
 
 
 module.exports = router;

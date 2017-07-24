@@ -4,7 +4,10 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var PORT = process.env.PORT || 3000;
-var user = require('./routes')
+var userRoutes = require('./routes/userRoutes');
+var startupRoutes = require('./routes/startupRoutes');
+var eventsRoutes = require('./routes/eventsRoutes');
+
 
 app.use(bodyParser.json());
 
@@ -21,14 +24,9 @@ mongoose.connect('mongodb://localhost/atrixCommunity', {
 	console.log('Connected to Atrix database');
 });
 
-
-
-app.use('/user',user);
-
-
-
-
-
+app.use('/user',userRoutes);
+app.use('/startup',startupRoutes);
+app.use('/event',eventsRoutes);
 
 
 app.listen(PORT,function(){
