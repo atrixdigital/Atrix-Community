@@ -1,0 +1,67 @@
+<!-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Atrix Community</a>
+
+      <button
+        class="btn btn-primary btn-margin"
+        routerLink="/">
+          Home
+      </button>
+
+      <button
+        class="btn btn-primary btn-margin"
+        *ngIf="auth.isAuthenticated()"
+        routerLink="/profile">
+          Profile
+      </button>
+
+      <button
+        class="btn btn-primary btn-margin"
+        routerLink="/ping"
+        *ngIf="auth.isAuthenticated()">
+          Ping
+      </button>
+
+      <button
+        class="btn btn-primary btn-margin"
+        *ngIf="auth.isAuthenticated() && auth.userHasScopes(['write:messages'])"
+        routerLink="/admin">
+          Admin Area
+      </button>
+
+      <button
+        class="btn btn-primary btn-margin"
+        *ngIf="!auth.isAuthenticated()"
+        (click)="auth.login()">
+          Log In
+      </button>
+
+      <button
+        class="btn btn-primary btn-margin"
+        *ngIf="auth.isAuthenticated()"
+        (click)="auth.logout()">
+          Log Out
+      </button>
+
+    </div>
+  </div>
+</nav> -->
+
+<!-- </main>
+ -->
+
+ <app-landing  *ngIf="!auth.isAuthenticated()"></app-landing>
+ <router-outlet  ></router-outlet>
+<div class="container-fluid">
+<div class="row">
+<div class="user-bar" id="user-bar" style="width:100%;margin-bottom: 0px;bottom:0px;padding-bottom: 20px;padding-top:-32px;z-index: 9999;">
+          <span class="user-bar-text-right" style="margin-left: 225px;">All rights Reserved.</span>
+           <span class="user-bar-text-left" style="margin-left: 5px">Atrix Digital Solutions</span>
+           </div>
+
+
+</div>
+</div>
+
+

@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-margin {
+  margin-top: 7px
+}
+
+.ending {
+	background: url(http://il5.picdn.net/shutterstock/videos/1835203/thumb/1.jpg);
+	padding:30px;
+}
+.ending .b {
+background:rgba(0, 0, 0, 0.5);
+padding: 20px;
+margin:0;
+color:white;
+text-align: center;
+}
+.ending .b .foot{
+	font-family: steinerlight;
+	color:white;
+	font-size: 30px;
+
+
+}
+.footsub{
+	font-size:20px;
+	color:white;
+}
+
+.steiner{
+	font-family: 'steinerlight'
+}
